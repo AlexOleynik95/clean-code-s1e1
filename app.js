@@ -1,6 +1,5 @@
-//Problem: User interaction does not provide the correct results.
-//Solution: Add interactivity so the user can manage daily tasks.
-
+// TODO: Add interactivity so the user can manage daily tasks.
+// TODO: make function for AJAX request
 
 const taskInput = document.querySelector('.input_add-item');
 const addButton = document.querySelector('.button_add');
@@ -101,9 +100,6 @@ let markTaskIncompleted = function() {
   incompletedTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, markTaskCompleted);
 }
-
-
-// incomplete function ajaxRequest was removed according to YAGNI principle
 
 
 addButton.onclick = addTask;
