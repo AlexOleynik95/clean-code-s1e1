@@ -60,7 +60,7 @@ button {
 }
 
 .form__button:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
 /* Heading */
@@ -79,12 +79,12 @@ button {
   height: 21px;
   margin: 0;
   padding: 0 9px;
-  border: 1px solid #dDd;
+  border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 18px;
   font-family: Lato, sans-serif;
   line-height: 18px;
-  background: #FFF;
+  background: #fff;
   color: #888;
 }
 
