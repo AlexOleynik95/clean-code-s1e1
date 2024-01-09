@@ -8,67 +8,69 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="matrix">
+    <header class="header">
       <img
         src="./eisenhower-matrix.jpg"
         alt="The Eisenhower's Matrix, or How to Make Decisions on What's Urgent & Important"
-        class="matrix__img"
+        class="header__img"
       >
       <a
-        class="matrix__link"
         href="https://goal-life.com/page/method/matrix-eisenhower"
         target="_blank"
+        class="header__link"
       >
         Want more details?
       </a>
-    </div>
+    </header>
 
-    <div class="form">
-      <h1 class="form__title">Add Item</h1>
-      <div class="form__wrapper">
-        <input class="input input_add-item form__input-text" type="text">
-        <button class="form__button button_add">Add</button>
+    <main class="main">
+      <div class="form">
+        <h1 class="form__title">Add Item</h1>
+        <div class="form__wrapper">
+          <input class="input input_add-item form__input-text" type="text">
+          <button class="form__button button_add">Add</button>
+        </div>
       </div>
-    </div>
-
-    <div class="form">
-      <h2 class="form__title">Todo</h2>
-        <ul class="form__list form__list_tasks-incompleted">
+  
+      <div class="form">
+        <h2 class="form__title">Todo</h2>
+          <ul class="form__list form__list_tasks-incompleted">
+            <li class="form__item">
+              <input type="checkbox" class="form__input-checkbox">
+              <label class="form__label">Pay Bills</label>
+              <input type="text" class="form__input-text">
+              <button class="form__button button_edit">Edit</button>
+              <button class="form__button button_delete">
+                <img src="./remove.svg" alt="remove" class="button__img-delete">
+              </button>
+            </li>
+            <li class="form__item form__item_edit">
+              <input type="checkbox" class="form__input-checkbox">
+              <label class="form__label">Go Shopping</label>
+              <input type="text" value="Go Shopping" class="form__input-text">
+              <button class="form__button button_edit">Save</button>
+              <button class="form__button button_delete">
+                <img src="./remove.svg" alt="remove" class="button__img-delete">
+              </button>
+            </li>
+          </ul>
+      </div>
+  
+      <div class="form">
+        <h2 class="form__title">Completed</h2>
+        <ul class="form__list form__list_tasks-completed">
           <li class="form__item">
-            <input type="checkbox" class="form__input-checkbox">
-            <label class="form__label">Pay Bills</label>
+            <input type="checkbox" class="form__input-checkbox" checked>
+            <label class="form__label">See the Doctor</label>
             <input type="text" class="form__input-text">
             <button class="form__button button_edit">Edit</button>
             <button class="form__button button_delete">
               <img src="./remove.svg" alt="remove" class="button__img-delete">
             </button>
           </li>
-          <li class="form__item form__item_edit">
-            <input type="checkbox" class="form__input-checkbox">
-            <label class="form__label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="form__input-text">
-            <button class="form__button button_edit">Save</button>
-            <button class="form__button button_delete">
-              <img src="./remove.svg" alt="remove" class="button__img-delete">
-            </button>
-          </li>
         </ul>
-    </div>
-
-    <div class="form">
-      <h2 class="form__title">Completed</h2>
-      <ul class="form__list form__list_tasks-completed">
-        <li class="form__item">
-          <input type="checkbox" class="form__input-checkbox" checked>
-          <label class="form__label">See the Doctor</label>
-          <input type="text" class="form__input-text">
-          <button class="form__button button_edit">Edit</button>
-          <button class="form__button button_delete">
-            <img src="./remove.svg" alt="remove" class="button__img-delete">
-          </button>
-        </li>
-      </ul>
-    </div>
+      </div>
+    </main>
 
     <script src="app.js"></script>
   </body>
