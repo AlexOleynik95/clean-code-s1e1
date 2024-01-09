@@ -1,5 +1,6 @@
 // TODO: Add interactivity so the user can manage daily tasks.
 // TODO: make function for AJAX request
+// TODO: fix checkboxes behaviour in Firefox
 
 const taskInput = document.querySelector('.input_add-item');
 const addButton = document.querySelector('.button_add');

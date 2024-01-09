@@ -31,6 +31,7 @@ button {
 
 .form__wrapper {
   display: flex;
+  margin-top: 20px;
 }
 
 .form__label,
@@ -92,12 +93,7 @@ button {
   color: #333;
 }
 
-/* New Task */
-.form__title:first-child {
-  display: block;
-  margin: 0 0 20px;
-}
-
+/* New task */
 .input_add-item {
   display: inline-block;
   width: 318px;
@@ -133,14 +129,8 @@ button {
   transform: rotateZ(0);
 }
 
-/* Completed */
-.completed-tasks .form__label {
-  text-decoration: line-through;
-  color: #888;
-}
 
-/* Edit Task */
-
+/* Edit task */
 .form__item_edit .form__input-text {
   display: inline-block;
   width: 224px;
@@ -150,6 +140,14 @@ button {
   display: none;
 }
 
+/* Completed tasks*/
+.form__list_tasks-completed .form__label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+/* Adaptivity */
 @media (max-width: 768px) {
   .matrix {
     text-align: center;
